@@ -1,0 +1,15 @@
+
+title: Intro
+position: -1,0
+---
+Welcome to the story.
+
+-> Pick Option 1
+    Good job, you picked option 1
+-> Pick Option 2
+    Good job, you picked option 2
+
+Whichever option you picked, you will see this line
+
+The end
+===

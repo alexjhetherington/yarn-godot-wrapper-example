@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dbv33g5g0nn16"]
+
+[ext_resource type="Script" path="res://addons/YarnDonut/Runtime/Localization.cs" id="1_jinw5"]
+[ext_resource type="Script" path="res://addons/YarnDonut/Runtime/YarnProject.cs" id="2_5d72s"]
+
+[sub_resource type="Resource" id="Resource_ls5f0"]
+resource_name = "Default (en-GB)"
+script = ExtResource("1_jinw5")
+LocaleCode = "en-GB"
+_stringTableJSON = "{\"line:83c3956a\":{\"Language\":\"en-GB\",\"ID\":\"line:83c3956a\",\"Text\":\"Welcome to the story.\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"5\",\"Lock\":\"051d45c5\",\"Comment\":\"Line metadata: lastline\"},\"line:15f3921d\":{\"Language\":\"en-GB\",\"ID\":\"line:15f3921d\",\"Text\":\"Pick Option 1\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"7\",\"Lock\":\"08dbc63d\",\"Comment\":\"\"},\"line:afa29b84\":{\"Language\":\"en-GB\",\"ID\":\"line:afa29b84\",\"Text\":\"Good job, you picked option 1\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"8\",\"Lock\":\"427b8982\",\"Comment\":\"\"},\"line:39929cf3\":{\"Language\":\"en-GB\",\"ID\":\"line:39929cf3\",\"Text\":\"Pick Option 2\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"9\",\"Lock\":\"491ec93e\",\"Comment\":\"\"},\"line:9a07f86d\":{\"Language\":\"en-GB\",\"ID\":\"line:9a07f86d\",\"Text\":\"Good job, you picked option 2\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"10\",\"Lock\":\"6f1c0375\",\"Comment\":\"\"},\"line:0c37ff1a\":{\"Language\":\"en-GB\",\"ID\":\"line:0c37ff1a\",\"Text\":\"Whichever option you picked, you will see this line\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"12\",\"Lock\":\"0f9c894c\",\"Comment\":\"\"},\"line:b666f683\":{\"Language\":\"en-GB\",\"ID\":\"line:b666f683\",\"Text\":\"The end\",\"Original\":null,\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"14\",\"Lock\":\"9ed60853\",\"Comment\":\"\"}}"
+stringsFile = ""
+
+[resource]
+resource_name = "story"
+script = ExtResource("2_5d72s")
+LastImportHadImplicitStringIDs = false
+LastImportHadAnyStrings = false
+IsSuccessfullyParsed = false
+CompiledYarnProgramBase64 = "ErwDCgVJbnRybxKyAwoFSW50cm8SGggCEg8KDWxpbmU6ODNjMzk1NmESBR0AAAAAEjoIBBIPCg1saW5lOjE1ZjM5MjFkEhoKGEwyc2hvcnRjdXRvcHRpb25fSW50cm9fMRIFHQAAAAASAhAAEjoIBBIPCg1saW5lOjM5OTI5Y2YzEhoKGEwzc2hvcnRjdXRvcHRpb25fSW50cm9fMhIFHQAAAAASAhAAEgIIBRICCAESGggCEg8KDWxpbmU6YWZhMjliODQSBR0AAAAAEg8SDQoLTDFncm91cF9lbmQSGggCEg8KDWxpbmU6OWEwN2Y4NmQSBR0AAAAAEg8SDQoLTDFncm91cF9lbmQSAggLEhoIAhIPCg1saW5lOjBjMzdmZjFhEgUdAAAAABIaCAISDwoNbGluZTpiNjY2ZjY4MxIFHQAAAAASAggPGgQKAkwwGhwKGEwyc2hvcnRjdXRvcHRpb25fSW50cm9fMRAFGhwKGEwzc2hvcnRjdXRvcHRpb25fSW50cm9fMhAHGg8KC0wxZ3JvdXBfZW5kEAkyDgoFdGl0bGUSBUludHJvMhAKCHBvc2l0aW9uEgQtMSww"
+SourceScripts = ["res://yarn-gdscript/story/main.yarn"]
+baseLocalization = SubResource("Resource_ls5f0")
+LocaleCodeToCSVPath = {}
+_lineMetadataJSON = "{\"lineMetadata\":{\"line:83c3956a\":{\"ID\":\"line:83c3956a\",\"File\":\"res://yarn-gdscript/story/main.yarn\",\"Node\":\"Intro\",\"LineNumber\":\"5\",\"Metadata\":[\"lastline\"]}},\"stringsFile\":null}"
+_listOfFunctionsJSON = "[{\"Name\":\"Random\",\"ReturnType\":\"-\\u003E Single\",\"Parameters\":[]},{\"Name\":\"RandomRange\",\"ReturnType\":\"-\\u003E Single\",\"Parameters\":[\"minInclusive\",\"maxInclusive\"]},{\"Name\":\"Dice\",\"ReturnType\":\"-\\u003E UInt32\",\"Parameters\":[\"sides\"]},{\"Name\":\"Round\",\"ReturnType\":\"-\\u003E Int32\",\"Parameters\":[\"num\"]},{\"Name\":\"RoundPlaces\",\"ReturnType\":\"-\\u003E Single\",\"Parameters\":[\"num\",\"places\"]},{\"Name\":\"Floor\",\"ReturnType\":\"-\\u003E Int32\",\"Parameters\":[\"num\"]},{\"Name\":\"Ceil\",\"ReturnType\":\"-\\u003E Int32\",\"Parameters\":[\"num\"]},{\"Name\":\"Inc\",\"ReturnType\":\"-\\u003E Int32\",\"Parameters\":[\"num\"]},{\"Name\":\"Dec\",\"ReturnType\":\"-\\u003E Int32\",\"Parameters\":[\"num\"]},{\"Name\":\"Decimal\",\"ReturnType\":\"-\\u003E Single\",\"Parameters\":[\"num\"]},{\"Name\":\"Int\",\"ReturnType\":\"-\\u003E Int32\",\"Parameters\":[\"num\"]}]"
+_serializedDeclarationsJSON = "[]"
+defaultLanguage = "en-GB"
+ProjectErrors = []

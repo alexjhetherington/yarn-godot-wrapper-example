@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://djmn5purqq2bt"]
+
+[ext_resource type="Script" path="res://yarn-gdscript/story_state.gd" id="1_5k3vp"]
+[ext_resource type="Script" path="res://addons/YarnDonut/Runtime/DialogueRunner.cs" id="2_57quj"]
+[ext_resource type="Resource" uid="uid://dbv33g5g0nn16" path="res://yarn-gdscript/story.tres" id="3_v66p7"]
+[ext_resource type="Script" path="res://yarn-gdscript/dialogue_view_wrapper.cs" id="4_ih4x6"]
+[ext_resource type="Script" path="res://yarn-gdscript/variable_storage_wrapper.cs" id="5_osekj"]
+
+[node name="StoryState" type="Node" node_paths=PackedStringArray("dialogue_runner", "view_wrapper", "variable_wrapper")]
+script = ExtResource("1_5k3vp")
+dialogue_runner = NodePath("DialogueRunner")
+view_wrapper = NodePath("DialogueViewWrapper")
+variable_wrapper = NodePath("VariableStorageWrapper")
+
+[node name="DialogueRunner" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_57quj")
+yarnProject = ExtResource("3_v66p7")
+variableStoragePath = NodePath("../VariableStorageWrapper")
+dialogueViewPaths = [NodePath("../DialogueViewWrapper")]
+startNode = "Intro"
+lineProviderPath = NodePath("")
+
+[node name="DialogueViewWrapper" type="Node" parent="." node_paths=PackedStringArray("storyState")]
+script = ExtResource("4_ih4x6")
+storyState = NodePath("..")
+
+[node name="VariableStorageWrapper" type="Node" parent="." node_paths=PackedStringArray("storyState")]
+script = ExtResource("5_osekj")
+storyState = NodePath("..")
